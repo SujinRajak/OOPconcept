@@ -11,22 +11,23 @@ namespace ConsoleApp1
         }
     }
     
-    
-    class Inheritance : Base
+    class Derived : Base
     {
-
         public void derived()
         {
-            Console.WriteLine("yo bro wassuppp i am his child");
+            Console.WriteLine("hello i am child class");
         }
+    }
+    
+    class Inheritance 
+    {
         public static void Main()
         {
-            Inheritance obj = new Inheritance();
+            Derived obj = new Derived();
             Base obje = new Base();
             obje.show();
             obj.show();
             obj.derived();
         }
-        
     }
 }
